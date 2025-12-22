@@ -132,11 +132,17 @@ body {
     font-size: 30px;
     letter-spacing: 7px;
     background-color: #006381;
+    padding: 5px;
+  }
+  & p {
+    font-weight: 600;
+    padding-top: 15px;
+    text-align: center;
   }
   & .conteudo {
     & ul {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
       gap: 30px;
     }
 
