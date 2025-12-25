@@ -45,10 +45,34 @@
     .list .formation,
     .list .contact {
       position: static;
+      animation: 1.4s slideUp ease-in-out;
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      transform: translateY(-100px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideDown {
+    from {
+      transform: translateY(300px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
     }
   }
 
   .containers {
+    animation: slideDown 1.2s ease-out;
     &.eu.ativo {
       min-height: 110dvh;
       margin: 0 auto;
@@ -57,10 +81,11 @@
       flex-direction: column;
 
       & .topo {
-        position: absolute;
-        width: 0;
+        position: relative;
+        width: 30px;
         height: 0;
-        top: 180px;
+        top: 100px;
+        left: 0px;
 
         & h2 {
           font-size: 30px;
@@ -76,21 +101,21 @@
       }
 
       & img {
-        position: absolute;
-        top: 200px;
-        right: 0px;
+        position: relative;
+        top: 100px;
         min-width: 100%;
       }
 
       & .conteudo {
         text-align: center;
-        position: absolute;
-        width: 370px;
+        position: relative;
+        width: 400px;
+        height: 250px;
         right: auto;
         left: auto;
-        bottom: -270px;
+        top: 150px;
         font-size: 22px;
-        border: 3px solid black;
+        border: none;
         background: radial-gradient(
           ellipse at center,
           #000000 0%,
@@ -100,17 +125,19 @@
         );
         padding: 10px;
         border-radius: 20px;
+        margin-bottom: 200px;
       }
     }
 
     &.objetivo.ativo {
       width: 100vw;
+      height: 100%;
 
       & .topo {
-        position: absolute;
+        /* position: absolute; */
         width: 0;
         height: 0;
-        top: 150px;
+        top: 140px;
       }
 
       & img {
@@ -159,24 +186,22 @@
 
     &.skills.ativo {
       max-width: 100dvw;
-      min-height: 130dvh;
+      max-height: 100dvh;
 
       & .topo {
-        position: absolute;
+        position: relative;
         width: 0;
         height: 0;
-        top: 180px;
+        top: 0px;
       }
 
       & .conteudo {
-        position: absolute;
-        min-width: 0;
-        min-height: 0;
-        top: 240px;
+        position: relative;
+        top: 200px;
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
-        gap: 30px;
+        gap: 20px;
 
         & img {
           width: 70px;
