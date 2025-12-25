@@ -76,8 +76,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 60px;
-  margin-top: 70px;
+  margin-top: 30px;
+  gap: 100px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -119,6 +119,7 @@ body {
 .containers.eu.ativo {
   display: flex;
   flex-direction: row;
+  margin-top: 0;
 
   & .topo {
     position: relative;
@@ -223,9 +224,6 @@ body {
 }
 
 .containers.skills {
-  width: 600px;
-  height: 600px;
-
   & .topo {
     font-size: 30px;
     border-radius: 30px;
