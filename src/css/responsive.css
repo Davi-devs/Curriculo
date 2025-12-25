@@ -73,28 +73,29 @@
 
   .containers {
     animation: slideDown 1.2s ease-out;
+
     &.eu.ativo {
-      min-height: 110dvh;
-      margin: 0 auto;
+      min-height: 120dvh;
+      margin: 0;
       align-items: center;
       display: flex;
       flex-direction: column;
 
       & .topo {
         position: relative;
-        width: 30px;
+        width: 350px;
         height: 0;
-        top: 100px;
+        top: 150px;
         left: 0px;
 
-        & h2 {
-          font-size: 30px;
-          width: 350px;
+        & h1 {
+          font-size: 36px;
+          width: 370px;
           text-align: center;
         }
         & span {
-          font-size: 20px;
-          width: 350px;
+          font-size: 18px;
+          width: 360px;
           text-align: center;
           padding-top: 10px;
         }
@@ -102,18 +103,18 @@
 
       & img {
         position: relative;
-        top: 100px;
+        top: 180px;
         min-width: 100%;
       }
 
       & .conteudo {
         text-align: center;
         position: relative;
-        width: 400px;
-        height: 250px;
+        width: 350px;
+        height: 300px;
         right: auto;
         left: auto;
-        top: 150px;
+        top: 180px;
         font-size: 22px;
         border: none;
         background: radial-gradient(
@@ -123,7 +124,7 @@
           #0b1530 70%,
           #132654 100%
         );
-        padding: 10px;
+        padding: 15px;
         border-radius: 20px;
         margin-bottom: 200px;
       }

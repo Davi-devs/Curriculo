@@ -26,9 +26,39 @@ body {
       #081438 100%
     );
 
-  & h2 {
+  & h1 {
+    background: radial-gradient(
+        circle at 60% 30%,
+        rgba(90, 140, 220, 0.6) 0%,
+        rgba(55, 95, 170, 0.45) 24%,
+        rgba(20, 35, 80, 0.65) 44%,
+        rgba(18, 29, 65, 0.9) 70%
+      ),
+      linear-gradient(
+        135deg,
+        #050b2c 0%,
+        #0a1440 28%,
+        #020617 52%,
+        #0c1a52 72%,
+        #09195f 100%
+      );
+
+    color: #f8fafc;
+    text-shadow: 0 2px 14px rgba(120, 170, 255, 0.45),
+      0 0 2px rgba(255, 255, 255, 0.25);
     font-size: 60px;
-    background-color: #006381;
+    border-radius: 30px;
+    padding: 10px;
+  }
+
+  & h2 {
+    background: radial-gradient(
+        circle at top right,
+        rgba(70, 130, 180, 0.6),
+        transparent 60%
+      ),
+      linear-gradient(135deg, #1f2933, #3b4a5a, #4f6d8c);
+    font-size: 60px;
     border-radius: 30px;
     padding: 10px;
   }
@@ -53,7 +83,7 @@ body {
 }
 
 .containers {
-  animation: slideDown 1.2s ease-out;
+  animation: slideDown 1.5s ease-out;
 
   & .topo {
     display: flex;
@@ -77,11 +107,11 @@ body {
 
 @keyframes slideDown {
   from {
-    transform: translateX(-300px);
+    transform: translateY(-800px);
     opacity: 0;
   }
   to {
-    transform: translateX(0);
+    transform: translateY(0);
     opacity: 1;
   }
 }
@@ -92,8 +122,16 @@ body {
 
   & .topo {
     position: relative;
-    bottom: 200px;
+    bottom: 20px;
     left: 200px;
+    text-align: center;
+
+    & h2 {
+      margin: 20px;
+      height: 150px;
+      width: 600px;
+      text-align: center;
+    }
   }
 
   & .conteudo {
@@ -109,6 +147,13 @@ body {
     max-width: 70%;
     border-bottom: 3px solid #c3c6c9;
     border-radius: 20%;
+  }
+
+  & span {
+    padding-top: 10px;
+    font-size: 28px;
+    width: 300px;
+    font-weight: 600;
   }
 }
 
