@@ -201,16 +201,16 @@
         position: relative;
         width: 0;
         height: 0;
-        top: 90px;
+        top: 70px;
       }
 
       & .conteudo {
         position: relative;
-        top: 140px;
+        top: 100px;
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
-        gap: 15px;
+        gap: 30px;
 
         & img {
           width: 70px;

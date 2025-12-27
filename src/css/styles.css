@@ -231,12 +231,19 @@ body {
   }
 
   & .conteudo {
-    max-height: 100vh;
-    min-width: 700px;
-    gap: 30px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    max-height: 100dvh;
+    width: 100dvw;
+    gap: 50px;
+
+    & .cont {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+      align-items: center;
+    }
   }
 }
 
