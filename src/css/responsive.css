@@ -194,7 +194,7 @@
 
     &.skills.ativo {
       max-width: 100dvw;
-      max-height: 100dvh;
+      height: 100dvh;
 
       & .topo {
         position: relative;
@@ -205,11 +205,11 @@
 
       & .conteudo {
         position: relative;
-        top: 200px;
+        top: 50px;
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
-        gap: 20px;
+        gap: 15px;
 
         & img {
           width: 70px;
