@@ -231,10 +231,11 @@ body {
   }
 
   & .conteudo {
-    min-width: 1200px;
-    min-height: 500px;
+    max-height: 100vh;
+    min-width: 700px;
     gap: 30px;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
   }
 }
