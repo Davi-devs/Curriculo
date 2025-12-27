@@ -193,17 +193,17 @@
     }
 
     &.skills.ativo {
-      max-height: 100dvh;
+      min-height: 100dvh;
       overflow-x: hidden;
 
       & .topo {
         position: relative;
-        top: 60px;
+        top: 90px;
       }
 
       & .conteudo {
         position: relative;
-        top: 60px;
+        top: 140px;
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
