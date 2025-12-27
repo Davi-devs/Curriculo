@@ -194,10 +194,13 @@
 
     &.skills.ativo {
       min-height: 100dvh;
+      width: 100dvw;
       overflow-x: hidden;
 
       & .topo {
         position: relative;
+        width: 0;
+        height: 0;
         top: 90px;
       }
 
